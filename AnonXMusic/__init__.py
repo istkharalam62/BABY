@@ -1,9 +1,10 @@
-from AnonXMusic.core.bot import Anony
+from AnonXMusic.core.bot import VIP
 from AnonXMusic.core.dir import dirr
 from AnonXMusic.core.git import git
 from AnonXMusic.core.userbot import Userbot
 from AnonXMusic.misc import dbb, heroku
 
+from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
@@ -11,7 +12,8 @@ git()
 dbb()
 heroku()
 
-app = Anony()
+app = VIP()
+api = SafoneAPI()
 userbot = Userbot()
 
 
@@ -24,3 +26,4 @@ Spotify = SpotifyAPI()
 Resso = RessoAPI()
 Telegram = TeleAPI()
 YouTube = YouTubeAPI()
+YTB = YTM()
